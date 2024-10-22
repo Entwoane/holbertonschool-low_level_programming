@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
  * main - Entry Point
  *
@@ -10,7 +10,7 @@ int main(void)
 	int a;
 	for ( a = 'a'; a <= 'z'; a++)
 {
-putchar(a)\n;
+putchar(a);
 }
 return (0);
 }
