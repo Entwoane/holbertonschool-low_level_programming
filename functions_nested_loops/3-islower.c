@@ -4,7 +4,8 @@
  * _islower - entry point
  *@c: char to output
  *
- * Description: description
+ *Return: On success 1.
+ * On error, 0 is returned
  */
 
 int _islower(int c)
