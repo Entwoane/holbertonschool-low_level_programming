@@ -1,6 +1,6 @@
 #include"main.h"
 /**
-* print_last_digit - entry point
+* jack_bauer - entry point
 *
 *
 *Return: On success 0.
