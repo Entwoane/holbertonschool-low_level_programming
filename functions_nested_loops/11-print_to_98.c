@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include"main.h"
 /**
-* add - entry point
-*
+* print_to_98 - entry point
+*@n: integer
 *
 *Return: a + b result
 */
