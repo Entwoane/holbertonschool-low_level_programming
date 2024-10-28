@@ -1,6 +1,6 @@
 #include"main.h"
 /**
- * print_diagonal - entry point
+ * print_square - entry point
  *@size: size of the square
  *
  * return (0) success
