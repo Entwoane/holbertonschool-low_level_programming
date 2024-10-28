@@ -2,8 +2,8 @@
 /**
  * print_numbers - entry point
  *
- *Return: On success 1.
- * On error, 0 is returned
+ *
+ * return (0) success
  */
 void print_numbers(void)
 {
