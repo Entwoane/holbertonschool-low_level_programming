@@ -1,8 +1,8 @@
 #include"main.h"
 /**
  * _strcpy - entry point
- *@dest: destination of strcpy
- *@src: source of strcpy
+ *@dest: destination
+ *@src: source
  *
  *
  * Return: Always 0
