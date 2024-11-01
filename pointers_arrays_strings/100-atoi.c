@@ -8,22 +8,28 @@
  */
 int _atoi(char *s)
 {
+	char c;
 	int result = 0;
 	int sign = 1;
 
-	while (*s == ' ')
+	if (s[0] == '-')
 	{
 		s++;
-	}
-	if (*s == '-')
-	{
 		sign = -1;
 	}
-	s++;
-
-	while (*s >= 48 && *s <= 57)
+	while ((c = *s))
 	{
-		result = result * 10 + (*s - '0');
+		if (c >= 47 && c <= 57)
+		{
+			result *= 10;
+			result += c - '0';
+		}
+		else
+		{
+			break;
+		}
+		s++;
 	}
-	return (sign * result);
+
+	return (result * sign);
 }
