@@ -9,40 +9,26 @@
 char *cap_string(char *str)
 {
 	int i = 0;
+	int j = 1;
+	int k;
+	char sep[] = " \t\n,;.!?\"(){}";
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (str[i] != '\0')
 	{
-		if (i == 0)
+		if (j && str[i] >= 'a' && str[i] <= 'z')
 		{
-			if ((str[i] >= 'a' && str[i] <= 'z'))
+			str[i] -= 32;
+		}
+		j = 0;
+		for (k = 0; sep[k] != '\0'; k++)
+		{
+			if (str[i] == sep[k])
 			{
-				str[i] = str[i] - 32;
+				j = 1;
+				break;
 			}
 		}
-		if (str[i] == ' ' || str[i] == '.')
-		{
-			i++;
-			if ((str[i] >= 'a' && str[i] <= 'z'))
-			{
-				str[i] = str[i] - 32;
-			}
-		}
-		if (str[i] == '\t' || str[i] == '\n')
-		{
-			i++;
-			if ((str[i] >= 'a' && str[i] <= 'z'))
-			{
-				str[i] = str[i] - 32;
-			}
-		}
-		if (str[i] == '-')
-		{
-			if ((str[i] >= 'a' && str[i] <= 'z'))
-			{
-				str[i] = str[i] - 32;
-			}
-		}
+		i++;
 	}
-
 	return (str);
 }
