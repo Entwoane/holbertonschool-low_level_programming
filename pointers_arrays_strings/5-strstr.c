@@ -8,13 +8,30 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	while (*haystack)
+	const char *h;
+	const char *n;
+
+
+	if (*needle == '\0')
+		return ((char *)haystack);
+
+	while (*haystack != '\0')
 	{
-		if (*haystack == *needle)
+		h = haystack;
+		n = needle;
+
+		while (*h == *n && *n != '\0')
 		{
-			return (haystack);
+			h++;
+			n++;
 		}
+
+		if (*n == '\0')
+			return ((char *)haystack);
+
 		haystack++;
 	}
+
 	return (0);
 }
+
