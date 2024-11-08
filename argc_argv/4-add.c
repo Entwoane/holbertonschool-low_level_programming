@@ -9,18 +9,20 @@
  */
 int main(int argc, char *argv[])
 {
-	unsigned int sum = 0;
-	unsigned int num;
-	int i;
+	int sum = 0;
+	int num;
+	int i, j;
 
 	for (i = 1; i < argc; i++)
 	{
-		if (!isdigit((*argv[i])))
+		for (j = 0; j < (argv[i][j] != '\0'); j++)
 		{
-			printf("Error\n");
-			return (1);
+			if (!isdigit((unsigned char)argv[i][j]))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-
 		num = atoi(argv[i]);
 		if (num > 0)
 		{
