@@ -9,9 +9,9 @@
  */
 int main(int argc, char *argv[])
 {
-	int a;
-	int b;
-	int result;
+	unsigned int a;
+	unsigned int b;
+	unsigned int result;
 
 	if (argc != 3)
 	{
