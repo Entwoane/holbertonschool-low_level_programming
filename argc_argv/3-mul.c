@@ -5,7 +5,6 @@
  * @argc: arguments contents
  * @argv: arguments vectors
  * Return: on Sucess 0
- * On error, Jules is returned
  */
 int main(int argc, char *argv[])
 {
