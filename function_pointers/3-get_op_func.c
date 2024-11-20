@@ -1,5 +1,6 @@
 #include "calc.h"
 #include <stdlib.h>
+#include <string.h>
 /**
  * get_op_func - function pointer that select the correct function
  * @s: char
@@ -20,9 +21,12 @@ int (*get_op_func(char *s))(int, int)
 
 	while (ops[i].op != NULL)
 	{
-		i++;
-	if (ops[i].op != ops[*s].op)
-		return (NULL);
+		if (strcmp(ops[i].op, s) == 0)
+		{
+		return (ops[i].f);
+		}
+	i++;
 	}
 
+		return (NULL);
 }
