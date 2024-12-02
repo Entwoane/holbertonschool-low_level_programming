@@ -26,11 +26,11 @@ In a singly linked list, each node consists of two parts: data and a pointer to 
 - Traversal
 - Searching
 - Length
-- *** Insertion: ***
+- **Insertion:**
 	- Insert at the beginning
 	- Insert at the end
 	- Insert at a specific position
-- *** Deletion: ***
+- **Deletion:**
 	- Delete from the beginning
 	- Delete from the end
 	- Delete a specific node
