@@ -13,9 +13,9 @@ struct node {
 
 ```
 This structure contains three essential elements:
-- *int data:* to store the node's data
-- *struct node *next:* a pointer to the next node
-- *struct node *prev:* a pointer to the previous node
+- int data: to store the node's data
+- struct node *next: a pointer to the next node
+- struct node *prev: a pointer to the previous node
 ![doubly-linked-list](https://media.geeksforgeeks.org/wp-content/uploads/20240809123741/Insertion-at-the-End-in-Doubly-Linked-List-copy.webp)
 
 ---
