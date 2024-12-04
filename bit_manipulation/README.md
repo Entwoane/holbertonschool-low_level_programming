@@ -37,6 +37,6 @@ Not allowed to use global variables
 
 No more than 5 functions per file
 
-The only C standard library functions allowed are malloc, free, printf and exit
+The only C standard library functions allowed are malloc, free and exit. Any use of functions like printf, puts, calloc, realloc etc… is forbidden
 
-The prototypes of all your functions are included in the header file called lists.h
+The prototypes of all your functions are included in the header file called main.h
