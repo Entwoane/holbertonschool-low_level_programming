@@ -48,10 +48,17 @@ Each of these operations would involve manipulating the next and prev pointers t
 ## -- General Requirements --
 
 All files compilated on Ubuntu 24.04 LTS
+
 All files ends with a new line
+
 A README.md file, at the root of the folder of the project is mandatory
+
 Code use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
+
 Not allowed to use global variables
+
 No more than 5 functions per file
+
 The only C standard library functions allowed are *malloc*, *free*, *printf* and *exit*
+
 The prototypes of all your functions are included in the header file called *lists.h*
