@@ -8,7 +8,6 @@ System calls are the calls that a program makes to the system kernel to provide 
 - *close*
 - *read*
 - *write*
-- *dprintf*
 
 ## -- General Requirements --
 
