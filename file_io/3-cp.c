@@ -48,7 +48,7 @@ void copy_file(int fd_from, int fd_to, const char *file_to)
 	}
 	if (rd == -1)
 	{
-		error_exit(98, "Error: Can't read from file\n", NULL, fd_from);
+		exit(98);
 	}
 }
 /**
