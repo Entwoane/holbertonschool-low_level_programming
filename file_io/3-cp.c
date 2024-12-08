@@ -12,14 +12,15 @@ void error_exit(int code, const char *msg, const char *arg)
 	exit(code);
 }
 /**
- * main - Copies content of a file to another file
+ * main - Copies content of a file to another *file
  * @argc: Number of arguments
  * @argv: Array of arguments
  * Return: 0 on success, or exit code on failure
  */
 int main(int argc, char *argv[])
 {
-	int fd_from, fd_to, rd, wr;
+	int fd_from, fd_to, wr;
+	ssize_t rd;
 	char buffer[BUFFER_SIZE];
 
 	if (argc != 3)
